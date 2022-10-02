@@ -4,22 +4,17 @@
 int main() {
     
         char string[] = "HelloWorld";
-        int arr_size = sizeof(string) / sizeof(string[0]);
-
 
         printf("String before transformation: ");
-        int i;
-        for (i= 0; i< arr_size; i++) {
-            printf("%c", string[i]); //prints array information
-        } 
+        printf("%s", string); 
         printf("\n");
         
-        char *str = string; //pointer that points to the array
+        char *str = string; //apontador que aponta para o array
         
-        uppercase(str, arr_size);
+        upper1(str);
         
         printf("String after transformation: ");
-        printf("%s", string); //prints array information
+        printf("%s", string); 
         printf("\n");
         
         return 0;

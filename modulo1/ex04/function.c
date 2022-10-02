@@ -1,11 +1,9 @@
-void uppercase(char *str, int arr_size)
+void upper1(char *str)
 {
     int i;
-
-    for(i = 0; i < arr_size; i++) {
-        if(*str >= 65 + 32 && *str <= 90 + 32) { //65+32 is "a" and 90+32 is "z"
-            *str = *str - 32;
-        }
-        str++;// skips one position of the array
+    for (i = 0; str[i] != '\0'; i++)
+    {
+            if (str[i] >= 65 + 32 && str[i] <= 90 + 32) //65+32 significa "a" e 90+32 significa "z" (ver tabela ASCII)
+                    str[i] =(int)str[i] - 32;
     }
 }

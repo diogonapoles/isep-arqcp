@@ -1,1 +1,1 @@
-int uppercase(char *str, int arr_size);
+int upper1(char *str);
