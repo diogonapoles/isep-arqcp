@@ -8,7 +8,7 @@ int main()
     int *ptr;
     ptr = &x;
 
-    printf("Base = %d, Expoente = %d || Resultado = %d", x, y);
+    printf("Base = %d, Expoente = %d", x, y);
     printf("\n");
 
     power_ref(ptr, y);
