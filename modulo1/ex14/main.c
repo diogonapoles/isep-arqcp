@@ -21,7 +21,7 @@ printf("Notas:\n");
 unsigned short int printmarks;
 for(printmarks = 0 ; printmarks<= 20 ; printmarks++) 
 {
-    printf("%d ",vec[printmarks]);
+    printf("%f ",vec[printmarks]);
 }
 printf("\n");
 
