@@ -17,13 +17,23 @@ for(i=0; i <= 20; i++) { //preencher com zeros
 	freq[i] = 0;
 }
 
+printf("Notas:\n")
+unsigned short int printmarks;
+for(printmarks = 0 ; printmarks<= 20 ; printmarks++) 
+{
+    printf("%d ",vec[printmarks]);
+}
+printf("\n")
+
 frequencies(grades,lengthvec,absfreq);
 
+printf("Frequencia absoluta:\n")
 unsigned short int print;
 for(print = 0 ; print<= 20 ; print++) 
 {
-    printf("%d, ",freq[print]);
+    printf("%d ",freq[print]);
 }
+printf("\n")
 
 return 0;
 }
