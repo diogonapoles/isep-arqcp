@@ -27,6 +27,7 @@ int main (){
 		k++;
 		printint++;
 	}
+	printf("\n")
 	
 	return 0;
 }
