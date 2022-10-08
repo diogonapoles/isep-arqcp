@@ -21,3 +21,5 @@ geany_run_script.sh
 
 #Ignore object files
 *.o
+
+.vscode/c_cpp_properties.json
