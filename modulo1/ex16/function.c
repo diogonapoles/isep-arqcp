@@ -7,7 +7,7 @@ char* where_exists(char* str1, char * str2)
     b = str1;
     if (*b == 0) 
 	{
-		return NULL;
+		return NULL; //caso de nao existir nada em str1
     }
 
     for ( ; *str2 != 0; str2 += 1) {

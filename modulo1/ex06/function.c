@@ -4,7 +4,7 @@ void power_ref(int* x, int y)
     int base = *x;
 
     if (y < 0)
-    {
+    {//para o caso de o valor de y ser negativo (torna o valor aproximado de zero!)
         *x = 0;
         return;
     }
@@ -13,7 +13,7 @@ void power_ref(int* x, int y)
     while (y!=0)
     {
         value*=base; 
-        --y;
+        --y;//reduz constantemente o valor do expoente
     }
     *x = value;
 }

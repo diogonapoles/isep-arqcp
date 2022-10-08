@@ -1,5 +1,5 @@
 int main (){
-	short shorts[] = { 7, 6,9,38,66,10,78,70,88,77,24,35};
+	short shorts[] = {7,6,9,38,66,10,78,70,88,77,24,35};
 	int integers[sizeof(shorts)/sizeof(short)/2];
 	
 	compress_shorts (shorts, sizeof(shorts)/sizeof(short), integers);

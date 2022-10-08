@@ -2,7 +2,7 @@
 #include "function.h"
 
 int main(){
-	int i;
+	unsigned int i;
 	int arr[]={5,4,3,2,1};
 	int *vec=arr;
 	int n = (int)sizeof(arr)/sizeof(arr[0]); //tamanho do endereço, por isso dividir por o tamanho da variavel declarada

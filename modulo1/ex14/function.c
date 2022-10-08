@@ -1,6 +1,6 @@
 void frequencies(float * grades, int n , int * freq) {
-	int i;
-    int nota;
+	unsigned int i;
+    unsigned short int nota;
 
 	for(nota = 0 ; nota <=20; nota ++) {
 		for(i = 0; i < n; i++) {

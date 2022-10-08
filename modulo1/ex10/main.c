@@ -12,7 +12,7 @@ int main()
     arraySize = (int)vec1[0]+1;
 
     printf("Array: ");
-        int i;
+        unsigned int i;
         for (i = 0; i < arraySize; i++) {     
             printf("%d ", vec1[i]);     
         }     

@@ -9,14 +9,14 @@ int main(){
     copy_vec(vec1, vec2, n);
 
     printf("Array 1: ");
-    int i;
+    unsigned short int i; //i tem que ser sempre menor que 255, caso contrario temos que retirar o "short"
     for (i = 0; i < n; i++) {     
         printf("%d, ", vec1[i]);     
     }     
     printf("\n");
 
     printf("Array 2 (copy of array 1): ");
-    int j;
+    unsigned short int j;
     for (j = 0; j < n; j++) {     
         printf("%d, ", vec2[j]);     
     }    

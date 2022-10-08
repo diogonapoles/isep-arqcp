@@ -10,16 +10,16 @@ float *grades = vec;
 int freq[20];
 int *absfreq = freq;
 
-int lengthvec= sizeof(vec)/sizeof(vec[0]);
+unsigned short int lengthvec= sizeof(vec)/sizeof(vec[0]);
 
-int i;
+unsigned short int i;
 for(i=0; i <= 20; i++) { //preencher com zeros
 	freq[i] = 0;
 }
 
 frequencies(grades,lengthvec,absfreq);
 
-int print;
+unsigned short int print;
 for(print = 0 ; print<= 20 ; print++) 
 {
     printf("%d, ",freq[print]);

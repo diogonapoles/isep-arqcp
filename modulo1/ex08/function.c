@@ -1,5 +1,6 @@
 void array_sort2(int *vec, int n){
-	int i, j, temp;
+	unsigned int i, j;
+    int temp;
 	
 	
 	for (i = 0; i < n; i++) {

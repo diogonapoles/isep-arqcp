@@ -1,6 +1,7 @@
 int odd_sum(int *p)
 {
-    int sum, i, arraySize;
+    unsigned int i;
+    int sum, arraySize;
     sum = 0;
     arraySize = (int)*p+1;
     
