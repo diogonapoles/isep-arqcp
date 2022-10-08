@@ -8,9 +8,9 @@ int main (){
 	compress_shorts (shorts, sizeof(shorts)/sizeof(short), integers);
 	
 	unsigned int i;
-	printf("array de shorts\n");
+	printf("Array de shorts:");
 	for (i = 0; i < sizeof(shorts)/sizeof(short); i++){//imprime shorts
-		printf("%d \t", shorts[i]);
+		printf("%d ", shorts[i]);
 	} 
 
 	unsigned int j;
@@ -20,10 +20,10 @@ int main (){
 	}
 
 	unsigned int k = 0;
-	printf("\narray inteiros como shorts: ");//imprime inteiros
+	printf("\nArray de inteiros como shorts: ");//imprime inteiros
 	short *printint = (short *) integers;
 	while (k < sizeof(shorts)/sizeof(short)){
-		printf ("%d", *printint);
+		printf ("%d ", *printint);
 		k++;
 		printint++;
 	}
