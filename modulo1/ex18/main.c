@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include "function.h"
+
 int main (){
 	short shorts[] = {7,6,9,38,66,10,78,70,88,77,24,35};
 	int integers[sizeof(shorts)/sizeof(short)/2];
@@ -11,16 +14,16 @@ int main (){
 	} 
 
 	unsigned int j;
-	printf("\narray de inteiros como inteiros\n");
+	printf("\nArray de inteiros como inteiros: ");
 	for (j=0; j<sizeof(shorts)/sizeof(short)/2; j++){//imprime inteiros
-		printf ("%d\n", integers[j]);
+		printf ("%d ", integers[j]);
 	}
 
 	unsigned int k = 0;
-	printf("\narray inteiros como shorts\n");//imprime inteiros
+	printf("\narray inteiros como shorts: ");//imprime inteiros
 	short *printint = (short *) integers;
 	while (k < sizeof(shorts)/sizeof(short)){
-		printf ("%d\n", *printint);
+		printf ("%d", *printint);
 		k++;
 		printint++;
 	}
