@@ -12,7 +12,7 @@ int main(){
 	
 	for (i = 0; i < size; i++)
 	{
-		vec1[i]=1+i; //preencher os arrays
+		vec1[i]=1+i; //preencher os arrays para testes
 		vec2[i]=3+i;
 	}
 	

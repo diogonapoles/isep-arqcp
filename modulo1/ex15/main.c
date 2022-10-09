@@ -23,22 +23,14 @@ int main(){
 	}
 	printf("\n");
 	
-	for (arr=vec; arr < vec+num-2; arr++)
+	for (arr=vec; arr < vec+num-2; arr++)// -2 porque ele compara 3 elementos e quando chegar ao antepenultimo ja faz a comparaçao ate ao ultimo
 	{
 		if(check(*arr,*(arr+1),*(arr+2))){
 			inc_nsets();
 		}
 	}
-	/*for (i = 0; i < num-2; i++)
-	{
-		if (check(vec[i],vec[i+1],vec[i+2]))
-		{
-			inc_nsets();
-		}
-	}
-	*/
-	printf("%d\n", nsets -1);
-	
+
+	printf("%d\n", nsets);
 
 	return 0;
 }

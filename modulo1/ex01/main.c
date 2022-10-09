@@ -6,7 +6,7 @@ int x = 5;
 int *xPtr = &x;
 float y = *xPtr + 3;
 int vec[] = {10, 11, 12, 13};
-int i =0;
+char i =0;
 
 printf("value x\n");
 printf("%d\n",x);
@@ -36,7 +36,8 @@ for (i = 0; i < 4; i++)
 	printf("%p\n",&vec[i]);
 }
 
-
-
+//a)
+//b) cada um tem disponiveis 4 bytes e podemos ver os addresses diferem de 4 bytes entre eles
+//c) addresses diferentes pois depende do layout da memoria, arquitetura etc
 
 }

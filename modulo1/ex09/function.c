@@ -8,7 +8,7 @@ int sort_without_reps(int *src, int n, int *dest){
 	
 	for (i = 0; i <= n; i++)
 	{
-		arr[i]=src[i];
+		arr[i]=src[i]; // copia para outro array
 	}
 	
 	
@@ -23,18 +23,18 @@ int sort_without_reps(int *src, int n, int *dest){
 		}
 	}
 	
-	dest[0]=arr[0];
+	dest[0]=arr[0];//coloca o primeiro elemento porque nao pode estar repetido
 	for (i = 1; i < n; i++)
 	{
-		if (arr[i]==arr[i-1])
+		if (arr[i]==arr[i-1])// vê se o elemento esta repetido
 		{
 			count++;
 			continue;
 		
 		}
-		dest[i-count]=arr[i];
+		dest[i-count]=arr[i];//coloca na posiçao que estaria a primeira o primeiro numero repetido
 		
 	}
 	
-	return n-count;	
+	return n-count;	//o tamanho será o tamanho do array menos o numero se elementos repetidos
 }
