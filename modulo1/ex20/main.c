@@ -18,7 +18,7 @@ int main(){
 	printf("\nEndereços encontrados:\n");
 
 	int j;
-	while (addrs[j] != NULL)
+	while (*addrs[j] != '\0')
 	{
 		printf("%p\n", addrs[j]);
 		j++;
