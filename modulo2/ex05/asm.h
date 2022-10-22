@@ -1,1 +1,1 @@
-
+short swapBytes(void);

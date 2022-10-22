@@ -1,1 +1,1 @@
-
+short crossSumBytes();
