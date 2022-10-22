@@ -1,0 +1,1 @@
+int upper1(char *str);
