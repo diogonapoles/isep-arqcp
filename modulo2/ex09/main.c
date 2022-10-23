@@ -11,8 +11,7 @@ int main(void){
 	B=10;
 	C=3;
 	D=3;
-	long soma = sum_and_subtract();
-	printf("sum = %ld\n", soma);
+	printf("sum = %ld\n", sum_and_subtract());
 	
 	
 	return 0;

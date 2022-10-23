@@ -8,26 +8,25 @@
 	
 	compute:
 	
+		
+	
 		movl A(%rip), %eax
-		movl B(%rip), %ecx
-		movslq %ecx , %rcx #converter B para 64
-		movslq %eax , %rax #converter A para 64
-		imulq %rcx, %rax
-		movl C(%rip), %edx
-		movslq %edx , %rdx #converter C para 64
-		subq %rdx, %rax
-		movq $0, %rdx
+		imull B(%rip), %eax		#(A*B)
+		subl C(%rip), %eax		#(A*B)-C
+		
+		
 		movl D(%rip), %edx
-		movslq %edx , %rdx #converter D para 64
-		#movq %rax, %rsi
-		cmp $0, %rdx
-		je end
-		divq %rdx
+		testl %edx, %edx
+		jz end
+		
+		cltd
+		idivl %ecx
+		
+		ret	
 		
 		end:
-		
-		
-		ret
+			movq $0, %rax
+			ret
 
 	
 

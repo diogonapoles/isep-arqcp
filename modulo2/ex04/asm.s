@@ -1,7 +1,6 @@
 .section .data
 	.global op1
 	.global op2
-	.global ola
 	.equ CONST,20
 	
 .section .bss

@@ -15,7 +15,7 @@
 		movq $0, %rcx 	   #rec a zero
 		movb D(%rip), %cl  #mover D para 8
 		movsbq %cl, %rcx   #converter D para 64 
-		subq %rcx, %rax     #result = result -D
+		subq %rcx, %rax    #result = result -D
 		movw B(%rip), %dx  #mover B para 16 
 		movswq %dx, %rdx   #converter B para 64 
 		addq %rdx, %rax    #result + B
