@@ -13,5 +13,3 @@
 		sar %eax					#shift right (the same as divide by 2 in binary)
 		ret
 		
-
-	

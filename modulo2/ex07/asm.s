@@ -14,3 +14,4 @@ crossSumBytes:
 	addb %cl, %ah         # mais sig. s1 + menos sig. s2
 
 	ret
+	

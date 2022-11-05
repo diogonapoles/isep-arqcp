@@ -15,8 +15,8 @@
 		subl C(%rip), %eax		#(A*B)-C
 		
 		
-		movl D(%rip), %edx
-		testl %edx, %edx
+		movl D(%rip), %ecx
+		testl %ecx, %ecx
 		jz end
 		
 		cltd
