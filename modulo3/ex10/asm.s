@@ -6,18 +6,15 @@
 	.global str_cat			        # int str_cat(void)
 
 str_cat:
-    pushq %r8
-    pushq %r9
-
-    movq $0, %rax
-    movq $0, %rcx
-
     movq ptr3(%rip), %rax
     movq ptr1(%rip), %r8            # move pointer address
     movq ptr2(%rip), %r9            # move pointer address
 
 first:
+    movq $0, %rcx
+    
     movb (%r8), %cl                 # move char to %cl
+
     cmpb $0, %cl                    # end of a string?
     je second
 
@@ -27,6 +24,8 @@ first:
     jmp first
 
 second:
+    movq $0, %rcx
+
     movb (%r9), %cl                 # move char to %cl
     cmpb $0, %cl                    # end of a string?
     je end
@@ -37,7 +36,5 @@ second:
     jmp second
 
 end:
-    popq %r8
-    popq %r9
     ret
     
