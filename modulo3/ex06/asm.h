@@ -1,0 +1,2 @@
+long encrypt(void);
+

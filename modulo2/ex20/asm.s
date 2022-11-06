@@ -23,25 +23,25 @@ check_num:
 positive:
 	shrl %cl,%eax			# para o numero odd, o ultimo bit significativo tem que ser 1
 	jc oddp					# mandamos o ultimo bit para a CF e fazemos a verificacao
-	movl $6,%eax
+	movl $6,%al
 	jmp end
 	
 negative:
 	shrl %cl,%eax
 	jc oddn
-	movl $4,%eax
+	movl $4,%al
 	jmp end
 	
 oddp:
-	movl $7,%eax
+	movl $7,%al
 	jmp end
 	
 oddn:
-	movl $5,%eax
+	movl $5,%al
 	jmp end
 
 zero:
-	movl $6,%eax
+	movl $6,%al
 	jmp end
 
 end:
