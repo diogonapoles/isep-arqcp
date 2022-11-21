@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "asm.h"
-#include "distance.c"
+
 
 int main() {
 	

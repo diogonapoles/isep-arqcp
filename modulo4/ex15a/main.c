@@ -7,6 +7,7 @@ int main() {
 	int left = 22;
 	int right = 2;
 	int activate_result = activate_bits(a, left, right);
+	printf("%d\n",activate_result);
 
 	return 0;
 }

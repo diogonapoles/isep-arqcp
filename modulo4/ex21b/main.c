@@ -3,11 +3,12 @@
 
 int main() {
 	
-	int v1=4,v2=3;
-	int *ptr=&v1;
+	char s[5]="abce";
+	char s1[5]="abcd";
+	char *a = s;
+	char *b = s1;
 	
-
-	printf("Square of %d: %d.\n",v2,inc_and_square(ptr,v2));
+	printf("Distance: %d\n",distance(a,b));
 
 	return 0;
 }

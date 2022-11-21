@@ -3,11 +3,14 @@
 
 int main() {
 	
-	int v1=4,v2=3;
-	int *ptr=&v1;
+	char x =0;
+	int vector1[1] = {0};
+	int vector2[]={};
+	int *vec1 = vector1;
+	int *vec2 = vector2;
 	
 
-	printf("Square of %d: %d.\n",v2,inc_and_square(ptr,v2));
+	add_byte(x,vec1,vec2);			//void function
 
 	return 0;
 }

@@ -3,11 +3,10 @@
 
 int main() {
 	
-	int v1=4,v2=3;
-	int *ptr=&v1;
-	
-
-	printf("Square of %d: %d.\n",v2,inc_and_square(ptr,v2));
-
+	int a = 0xFFFFF29C; 
+	int left = 22;
+	int right = 2;
+	int activate_result = activate_invert_bits(a, left, right);
+	printf("%d\n",activate_result);
 	return 0;
 }
