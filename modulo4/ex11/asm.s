@@ -11,19 +11,27 @@ proc:
 	
 # body
 
-	leaq	(%rdi,%rdx), %r10
-	movq	8(%rsp), %rax
-	movq	%r10, (%rsi)
-	movq	%rdx, %rsi
-	addq	%r8, %rdx
-	subq	%rdi, %rsi
-	leaq	(%rax,%rax,2), %rax
-	movq	%rsi, (%rcx)
-	movw	%dx, (%r9)
-	movq	16(%rsp), %rdx
-	movb	%al, (%rdx)
+	movl %edi, %eax
+    addl %edx, %eax			#sum x1 and x2
 
+    movl %eax, (%rsi)       #place on pointer
 
+    movl %edx, %eax
+    subl %edi, %eax			#sub x2 - x1
+
+    movl %eax, (%rcx)       #place on pointer
+        
+    movswl %r8w, %eax       
+    addl %edx, %eax			#sum x3 and x2
+
+    movl %eax, (%r9)        #place on pointer
+        
+    movq 16(%rbp), %rax
+    movb $3, %dl
+    imulb %dl               #multiply x4 for 3                 
+
+    movq 24(%rbp), %rdx
+    movb %al, (%rdx)
 end:
 	
 	# epilogue
