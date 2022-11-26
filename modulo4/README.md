@@ -26,4 +26,3 @@ e) Ficheiros
 
 * O ficheiro com a funcao main deve chamar-se "main.c" e nao deve ter nenhuma das restantes funcoes pedidas no enunciado de cada exercicio. 
 * O nome dos restantes ficheiros nao deve conter espacos. 
-  

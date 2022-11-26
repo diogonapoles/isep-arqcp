@@ -2,6 +2,9 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "stdio.h": "c",
-        "asm.h": "c"
+        "asm.h": "c",
+        "count_bits_one.h": "c",
+        "reset_bit.h": "c",
+        "asm1.h": "c"
     }
 }
