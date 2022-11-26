@@ -9,14 +9,16 @@ reset_2bits:
 # -----------------------------------------------------------------------
 
     pushq %rsi
-	call reset_bit				# 1ª chamada da funçao para ativar bit em 'pos'
+	call reset_bit				
     popq %rsi
 	
-	movl $31, %edx					# coloca 31 em eax
-	subl %esi, %edx					# eax = eax - ecx (31 - pos)
+
+	movl $31, %edx					
+	subl %esi, %edx					# edx = (31 - n)
+    movl %edx, %esi
 	
     pushq %rsi
-	call reset_bit				# 2ª chamada da funçao para ativar bit em (31-pos)
+	call reset_bit				
     popq %rsi
 	
 # -----------------------------------------------------------------------
