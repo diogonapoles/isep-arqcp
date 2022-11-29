@@ -17,6 +17,8 @@ call_proc:
     movw %dx, -12(%rbp)     #x3=c
     movb %cl, -13(%rbp)     #x4=d
 
+                                #valor de x1(a), já se encontra em rdi
+        leaq -4(%rbp), %rsi     #*p1 como 2 argumento
 
     leaq -4(%rbp), %rsi     #&
     movl -8(%rbp), %edx     #b

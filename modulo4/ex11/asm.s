@@ -10,6 +10,8 @@ proc:
 	movq %rsp, %rbp  	# the stack frame pointer for sum function
 	
 # body
+ 	movl %edi, %eax
+        addl %edx, %eax
 
 	movl %edi, %eax
     addl %edx, %eax			#sum x1 and x2
