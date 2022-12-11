@@ -1,7 +1,7 @@
 # make VARIABLES
 
 INCLUDES = asm.h
-OBJFILES = asm.o main.o
+OBJFILES = new_matrix.o main.o
 ASSFILE = asm.s
 PROGRAM = main
 # suffix rules

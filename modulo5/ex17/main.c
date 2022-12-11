@@ -2,11 +2,20 @@
 #include "asm.h"
 
 int main() {
-	
-	int v1=4,v2=3,v3=2,v4=1;
-	
+	int i =1, j=2;
+	structA sa;
+	sa.ub.b=1;
 
-	printf("Greatest value of %d %d %d %d is %d.\n",v1,v2,v3,v4,greatest(v1,v2,v3,v4));
+	structA sa1;
+	sa1.ub.b=5;
 
+	structA vec1[3]={sa,sa,sa};
+	structA vec2[3]={sa,sa,sa1};
+	structA vec3[3]={sa,sa,sa};
+	structA vec4[3]={sa,sa,sa};
+
+	structA *matrix[4] = {vec1,vec2,vec3,vec4};
+
+	printf("valor = %d\n",return_unionB_b(matrix, i, j));
 	return 0;
 }
