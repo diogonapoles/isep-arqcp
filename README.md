@@ -1,29 +1,15 @@
-# Leia atentamente este ficheiro antes de iniciar o seu trabalho nas aulas PL de ARQCP. #
+# ARQCP (2022-2023)
 
-## Regras para a utilizacao do repositorio: ##
+## Informação acerca da utilização deste repositório
 
-a) Cada grupo deve ter o seu repositorio
+Este repositório contém, na integra, a realização dos módulos 1, 2, 3, 4 e 5 da unidade curricular de **ARQCP**.
+Seguem-se, no entanto, alguns comentários:
 
+1. A utilização deste repositório deverá ser apenas para estudo individual e melhor compreensão das temáticas. Os seus conteúdos não devem, **de forma alguma**, ser plagiados e utilizados na unidade curricular de ARQCP.
+2. Não existe a garantia de que todos os exercícios estão corretos e/ou funcionais.
+3. Estão incluídos os enunciados para cada módulo em [enunciados](/enunciados/).
 
-b)  O nome do repositorio no Bitbucket segue o seguinte padrao: arqcp2223tttgxx
+### Exercícios realizados por
 
-* ttt deve ser substituido pelo nome da turma. Ex: 2da
-* xx deve ser substituido pelo numero do grupo (sempre com 2 digitos). Ex: g01
-* Exemplo: arqcp22232dag01
-
-c) Estrutura de diretorios na raiz do repositorio
-
-* A estrutura de diretorios do primeiro nivel ja esta criada. 
-* Existe um diretorio para cada modulo das aulas PL
-* Os exercicios de cada modulo devem ser colocados no diretorio correspondente. 
-
-d) Organizacao do diretorio de cada modulo.
-
-* Dentro do diretorio de cada modulo deve ser criado um subdiretorio para cada exercicio.
-* O nome desse subdiretorio deve iniciar pelas letras "ex" e ser seguido do numero que identifica o exercicio. Exemplo: "ex01"
-
-e) Ficheiros
-
-* O ficheiro com a funcao main deve chamar-se "main.c" e nao deve ter nenhuma das restantes funcoes pedidas no enunciado de cada exercicio. 
-* O nome dos restantes ficheiros nao deve conter espacos. 
-  
+- Diogo Nápoles
+- João Teixeira
