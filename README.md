@@ -1,15 +1,14 @@
 # ARQCP (2022-2023)
 
-## Informação acerca da utilização deste repositório
+## Information about this repository
 
-Este repositório contém, na integra, a realização dos módulos 1, 2, 3, 4 e 5 da unidade curricular de **ARQCP**.
-Seguem-se, no entanto, alguns comentários:
+This repository contains the complete work for modules 1, 2, 3, 4, and 5 of the **ARQCP** course. Here are some important notes:
 
-1. A utilização deste repositório deverá ser apenas para estudo individual e melhor compreensão das temáticas. Os seus conteúdos não devem, **de forma alguma**, ser plagiados e utilizados na unidade curricular de ARQCP.
-2. Não existe a garantia de que todos os exercícios estão corretos e/ou funcionais.
-3. Estão incluídos os enunciados para cada módulo em [enunciados](/enunciados/).
+1. This repository is intended solely for individual study and a better understanding of the topics. Its contents should **under no circumstances** be plagiarized or used directly in the ARQCP course.
+2. There is no guarantee that all exercises are correct and/or functional.
+3. The statements for each module are included in [statements](/enunciados/).
 
-### Exercícios realizados por
+### Exercises completed by
 
 - Diogo Nápoles
 - João Teixeira
